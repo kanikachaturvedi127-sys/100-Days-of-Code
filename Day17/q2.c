@@ -40,4 +40,3 @@ int main() {
         printf("Not prime\n");
 
     return 0;
-}
