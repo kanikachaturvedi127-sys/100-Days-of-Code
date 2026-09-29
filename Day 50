@@ -1,0 +1,19 @@
+Q99: Change the date format from dd/04/yyyy to dd-Apr-yyyy.
+
+/*
+date = input().strip()
+day, month, year = date.split('/')
+
+print(f"{day}-Apr-{year}")
+Q100: Print all sub-strings of a string.
+
+/*
+s = input().strip()
+
+result = []
+
+for i in range(len(s)):
+    for j in range(i + 1, len(s) + 1):
+        result.append(s[i:j])
+
+print(",".join(result))
