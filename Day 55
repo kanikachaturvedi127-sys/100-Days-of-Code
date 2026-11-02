@@ -1,0 +1,28 @@
+Q105 (Logic Enhancers)
+
+Write a program to take an integer array nums of size n, and print the majority element. The majority element is the element that appears strictly more than ⌊n / 2⌋ times. Print -1 if no such element exists. Note: Majority Element is not necessarily the element that is present most number of times.
+
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+long long pivotInteger(long long n) {
+    long long target = n * (n + 1) / 2;
+
+    long long x = sqrtl(target);
+
+    if (x * x == target) {
+        return x;
+    }
+
+    return -1;
+}
+
+int main() {
+    long long n;
+    cin >> n;
+
+    cout << pivotInteger(n);
+
+    return 0;
+}
